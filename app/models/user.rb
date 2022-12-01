@@ -3,3 +3,7 @@ class User < ApplicationRecord
     validates :lastname, presence: true
     validates :email, presence: true, uniqueness: true
 end
+
+class Person < ApplicationRecord
+    validates :name, presence: true
+end

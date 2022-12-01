@@ -22,3 +22,11 @@ describe User do
     expect(user.errors[:email]).to include('has already been taken')
   end 
 end
+
+describe Person do
+  it "is valid when it contains name" do
+    person = Person.new( name: 'Cleidson')
+
+    expect(person).to be_valid
+  end
+end
